@@ -17,13 +17,19 @@ function agregarAmigo (){
         if (nombreAmigo===''){
             alert("Ingrese un nombre válido");
         } else {
+            asignarTextoElemento('listaAmigos','');
             listaNombres.push(nombreAmigo);
             console.log(nombreAmigo)
             console.log(listaNombres)
+            asignarTextoElemento('listaAmigos', listaNombres);
             limpiarNombre();
-
 
         }
 }
 
+
+function asignarTextoElemento (elemento, texto) {
+    let elementoHTML = document.getElementById(elemento);
+    elementoHTML.innerHTML = texto; 
+}
 
