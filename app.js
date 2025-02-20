@@ -3,7 +3,12 @@
 let nombreAmigo;
 let listaNombres= [];
 
-//Funcion agregar y verificar campo vacío
+//Funcion agregar, verifica campo vacio y limpia nombre
+
+function limpiarNombre(){
+    document.getElementById("amigo").value = '';
+ 
+ }
 
 function agregarAmigo (){
 
@@ -15,7 +20,10 @@ function agregarAmigo (){
             listaNombres.push(nombreAmigo);
             console.log(nombreAmigo)
             console.log(listaNombres)
+            limpiarNombre();
+
 
         }
 }
+
 
