@@ -3,17 +3,19 @@
 let nombreAmigo;
 let listaNombres= [];
 
-//Funciones
+//Funcion agregar y verificar campo vacío
 
 function agregarAmigo (){
 
-    nombreAmigo=document.getElementById("amigo").value;
-    listaNombres.push(nombreAmigo);
-    console.log(nombreAmigo)
-    console.log(listaNombres)
+    nombreAmigo=document.getElementById("amigo").value.trim();
 
+        if (nombreAmigo===''){
+            alert("Ingrese un nombre válido");
+        } else {
+            listaNombres.push(nombreAmigo);
+            console.log(nombreAmigo)
+            console.log(listaNombres)
 
+        }
 }
-
-
 
