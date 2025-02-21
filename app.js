@@ -9,6 +9,14 @@ let listaHTML="";
 
 
 
+document.getElementById("amigo").addEventListener("keyup", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        agregarAmigo();  
+    }
+});
+
+
 
 function agregarAmigo (){
 
