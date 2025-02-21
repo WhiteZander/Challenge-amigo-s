@@ -23,9 +23,9 @@ function agregarAmigo (){
 
     nombreAmigo=document.getElementById("amigo").value.trim();
 
-        if (nombreAmigo===''){
+        if (nombreAmigo===''){ //Evita campo vacío
             alert("Ingrese un nombre válido");
-        } else { 
+        } else { //Evita nombres duplicados
             
             if(listaNombres.includes(nombreAmigo)){
 
@@ -54,7 +54,7 @@ function removerLista(){
     asignarTextoElemento('listaAmigos','');
 }
 
-function agregarListaHtml (){
+function agregarListaHtml (){ //Agrega los nombres a la lista en HTML
 
     for ( let i=0; i< listaNombres.length; i++) {
        listaHTML+= `<li> ${listaNombres[i]}</li>`
@@ -68,8 +68,7 @@ function agregarListaHtml (){
 
 function limpiarNombre(){
     document.getElementById("amigo").value = '';
- 
- }
+  }
 
 
 
