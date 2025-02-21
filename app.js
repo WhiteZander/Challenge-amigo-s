@@ -25,7 +25,13 @@ function agregarAmigo (){
 
         if (nombreAmigo===''){
             alert("Ingrese un nombre válido");
-        } else {
+        } else { 
+            
+            if(listaNombres.includes(nombreAmigo)){
+
+                alert("Ya has ingresado ese nombre, por favor ingresa uno diferente");
+
+        } else{
             asignarTextoElemento('listaAmigos','');
             listaNombres.push(nombreAmigo);
             console.log(nombreAmigo);
@@ -35,7 +41,7 @@ function agregarAmigo (){
             console.log(listaHTML);     
         }
 
-}
+}}
 
 //Funciones complementarias
 
