@@ -28,8 +28,16 @@ La aplicación permite a los usuarios:
 ## Instalación y Uso
 
 1. **Clona/descarga el repositorio ó visualizalo a través de GitHub Pages**  
-   
 
+```bash
+   git clone https://github.com/tu-usuario/amigo-secreto.git
+``` 
+
+``` 
+   https://whitezander.github.io/Challenge-amigo-s/
+``` 
+
+   
 2. **Abre el archivo `index.html` en tu navegador:**  
    Simplemente haz doble clic en el archivo `index.html` o utiliza un servidor local para visualizar la aplicación
 
