@@ -68,6 +68,14 @@ function sortearAmigo(){
         alert("Ingresa al menos un nombre para sortear");
     } else {
 
+        asignarTextoElemento("resultado",listaNombres[generarMaximoIndice()]);
+
 
     }
+}
+
+function generarMaximoIndice() {
+    let maximoIndice = Math.floor(Math.random()*listaNombres.length);
+    return maximoIndice;
+
 }
